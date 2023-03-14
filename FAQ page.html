@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Parallax Scrolling Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <div class="floating-bubble">
+    <p>Do you have two minutes to spare?<br> Please take our survey :-)<br></p>
+  <a href=https://docs.google.com/forms/d/e/1FAIpQLSdE_TNSL_xyBXyhui-xUWh3mtpU4lyRh0CCmel3KIC8VSc7VA/viewform?usp=sf_link>Take me to the survey! </a>
+  </div>
+<header style="background-color:black; width:100%;">
+  <ul>
+    <li><a href="code.html">Home</a></li>
+    <li><a href="FAQ page.html"> FAQ's </a></li>
+    <li><a href="Listeners.html">Listeners</a></li>
+
+  </ul>
+<h1 class="welcome" style="color:Orange; background-color: black;"> Welcome to the FAQ page!</h1>
+</header>
+<div class="container">
+
+<button class="accordion"> Why is this gif here?</button>
+<div class="panel">
+  <p class="text"> As we have ascertained from our survey, some of us have undergone the unpleasant sensation of anxiety, or its heightened state- a panic attack.<br>
+  It is easy, with a bit of practise of regulated breathing to calm down. Use this gif when you're feeling anxious in the following manner.<br> Breathe in for the entire duration of the time that
+  the figure is enlarging, pause and then give a long exhale till the figure collapses.<br>
+  All is well.
+  </p>
+</div>
+
+<button class="accordion"> What exactly does mental health refer to? Why should I pay it any attention? </button>
+<div class="panel">
+  <p class="text">Mental health refers to the emotional and psychological well-being and balance of a person.
+  <br> Too often we go about life looking only at its gross aspects. The subtler workings of Life on our mind are ignored
+  until one day, inevitably, they erupt out of us in word or deed.<br>
+  We must take mental health into consideration to prevent this explosive reaction- which leads to violent emotions of
+  sorrow, hopelessness, delusion or anxiety from overtaking us.<br>
+  To be free, truly free, we must each one of us liberate our minds from the things that plague it, and mental health is the door that opens up the path to do that.
+   </p>
+</div>
+
+<button class="accordion">What is depression?</button>
+<div class="panel">
+  <p class="text">Depression differs from sadness.<br> It is normal to feel sad for a while, once in a while.<br> But when there is a persisting feeling of sadness, with or without a "valid" cause, then there is a chance that it may be depression.
+    It is not a thing to be taken lightly- if you think you may be suffering a bout of it, or you know somebody who does, please- talk to a <bold>trusted</bold> friend or advisor. Be easy on your mind and seek to overcome it by passing through. Seek help- there is no shame in needing help- it is in fact
+    the very basis from which life is nurtured.</p>
+</div>
+
+<button class="accordion">What is anxiety?</button>
+<div class="panel">
+  <p class="text">Anxiety is a restlessness that leads to many physical symptoms. These physical symptoms include acute shortness of breath- which may lead to panting/gasping, rapid heartbeat, stress headaches, trembling hands and so on.
+  Often, people suffering from anxiety mistake it to be some other physical ailment and fruitlessly undertake visit after visit to the doctor- only to be labelled hypochondriacs, or worse, receive the wrong medication. Meditation and mindfulness
+(awareness of the present moment) are the most trusted hacks for overcoming anxiety.<br>Therefore, just keep breathing.</p>
+</div>
+
+<button class="accordion">What should I do if any of this resonates with me or with someone I know?</button>
+<div class="panel">
+  <p class="text">In case you feel that you may need help, please go to someone you trust and confide in them. In case you do not wish to do so, you can utilize the resources we have <br><br><br><style="color:gold; text-align:center;"><a href="Listeners.html">here</a></style>
+</p>
+</div>
+</div> <!--There is one <div class="container" this is the closing tag to it--->
+
+
+<div class="container">
+  <img class="gif" src="https://cdn.shopify.com/s/files/1/2238/7919/files/170412_Three_breathing_techniques_to_beat_stress_large.gif?v=1502730047">
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</section>
+</body>
+</html>
